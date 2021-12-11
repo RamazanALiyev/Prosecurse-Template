@@ -1,0 +1,955 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+html, body {
+    font-size: 10px;
+}
+
+.zero-margin {
+    margin: 0;
+}
+
+.zero-padding {
+    padding: 0;
+}
+
+section#main-section {
+    background-image: url(./img/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER START */
+section#main-section header#navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+section#main-section header#navbar div.flex {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+section#main-section header#navbar .page-name h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-right: 10rem;
+}
+
+header#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+header#navbar ul li a {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+header#navbar .responsiv-icons a {
+    font-size: 2.4rem;
+    color: #737373;
+    margin: 1.5rem;
+    display: none;
+}
+
+/* HEADER END */
+/* START ARTICLE */
+section#main-section article div.center {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+article div.center div.about {
+    margin-top: 12rem;
+    padding-right: 70rem;
+}
+
+article div.center div.about h1 {
+    font-weight: 900;
+    font-size: 5.8rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 3.5rem 0px;
+}
+
+article div.center div.about p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+article div.about-button {
+    margin-top: 4.5rem;
+}
+
+article div.about-button a:first-child {
+    background: #784F33;
+    border-radius: 3.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 3.6rem;
+    margin-right: 0.5rem;
+    transition: 600ms;
+    transition-property: border color background-color;
+}
+
+article div.about-button a:first-child:hover {
+    color: #784F33;
+    background-color: #fff;
+    border: 1px solid #784F33;
+    transform: translate(0);
+}
+
+article div.about-button a:last-child {
+    background: transparent;
+    border: 1px solid #784F33;
+    border-radius: 3.7rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #784F33;
+    text-decoration: none;
+    padding: 1rem 3.6rem;
+    transition: 1s all;
+}
+
+article div.about-button a:last-child:hover {
+    color: #fff;
+    background-color: #784F33;
+}
+
+article .center .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    margin-bottom: -5rem;
+}
+
+article .center .cards .cardd {
+    height: 21rem;
+    width: 32.8rem;
+    padding: 5rem;
+    margin: 0 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0.2rem 0.5rem 0.9rem lightgrey;
+}
+
+.cards .cardd a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 4.4rem;
+    background-color: #fff;
+}
+
+.cards .cardd a.bg-blue {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 4.4rem;
+    background-color: #295C7A;
+    color: #fff;
+}
+
+article .center .cards .cardd:nth-child(3) {
+    background-color: #295C7A;
+}
+
+.cards .cardd h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 1rem;
+}
+
+.cards .cardd:nth-child(3) h3 {
+    color: #fff;
+}
+
+.cards .cardd p {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.cards .cardd:nth-child(3) p {
+    color: #fff;
+}
+
+/* END ARTICLE */
+
+
+/* START Section#CLIENT */
+section#client {
+    background-color: #FAFAFA;
+    min-height: 50vh;
+}
+
+section#client div.center {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#client div.center .client-matters {
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.client-matters h3 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.client-matters p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-bottom: 5rem;
+    padding: 0 30rem;
+}
+
+section#client div.center .clients-number {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9.4rem;
+}
+
+.clients-number .clients {
+    width: 22.5rem;
+    height: 20.2rem;
+    background-color: white;
+    margin: 0 4.2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-number .clients a {
+    font-size: 4rem;
+    color: #D0A144;
+
+}
+
+.clients-number .clients h3 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.clients-number .clients p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1px;
+    color: #737373;
+
+}
+
+/* END Section#CLIENT */
+
+/* START SECTION#about */
+section#about {
+    background-color: #fff;
+    min-height: 50vh;
+}
+
+section#about div.center {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.center .question {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.center .question h3 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.center .question p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding: 0 30rem;
+}
+
+.center .image-about {
+    display: flex;
+    margin: 6rem 0 10rem 0;
+}
+
+.center .image-about .image {
+    width: 80rem;
+    height: 45rem;
+    margin-right: 8rem;
+    overflow: hidden;
+}
+
+.center .image-about .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s transform;
+}
+
+.center .image-about .image:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.center .image-about .about {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center .image-about .about h3 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.2px;
+
+}
+
+.center .image-about .about p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 3rem;
+}
+
+.center .image-about .about .temporary {
+    display: flex;
+}
+
+.temporary .icon {
+    margin-right: 1.5rem;
+}
+
+.temporary .icon i {
+    color: #D0A144;
+    font-size: 2.4rem;
+}
+
+.temporary .text h4 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    padding-right: 5rem;
+}
+
+.temporary .text p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+/* END SECTION#about */
+
+/* START #advertising */
+section#information {
+    background: linear-gradient(to bottom, #FAFAFA 0 75%, #252B42 75% 100%);
+}
+
+section#information div.center {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center .advertising {
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 2rem;
+}
+
+.center .black-part {
+    min-height: 10vh;
+}
+
+.center .absolute-part {
+    position: absolute;
+    width: 100%;
+    bottom: 2.5rem;
+    min-height: 15vh;
+    background: linear-gradient(#295C7A, #0072B5);
+    display: flex;
+    align-items: center;
+}
+
+.absolute-part .text {
+    width: 40rem;
+    margin: 0 12rem 0 5rem;
+
+}
+
+.absolute-part .text h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 10rem 0 0;
+}
+
+.absolute-part .input-group.mb-0 {
+    width: 45rem;
+    height: 4rem;
+}
+
+.absolute-part input {
+    font-size: 1.6rem;
+}
+
+.absolute-part input::placeholder {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0;
+    padding: 0;
+}
+
+.absolute-part button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #D0A144;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* END #advertising */
+
+/* START #main-cards */
+section#main-cards {
+    background-color: #F3F3F3;
+}
+
+section#main-cards div.center {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.center .touch {
+    text-align: center;
+}
+
+.touch h3 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.touch p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding: 0 30rem;
+}
+
+.center .main-cards-flex {
+    display: flex;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.center .main-cards-flex .main-card {
+    width: 35.8rem;
+    height: 33.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.center .main-cards-flex .main-card:nth-child(2) {
+    height: 41.8rem;
+    transform: translateY(-4rem);
+    background-color: #252B42;
+}
+
+.center .main-cards-flex .main-card:nth-child(2) a:not(.button) {
+    color: #fff;
+}
+
+.center .main-cards-flex .main-card:nth-child(2) h4 {
+    color: #fff;
+}
+
+.main-card i {
+    font-size: 7.2rem;
+    color: #D0A144;
+    margin-bottom: 1.5rem;
+}
+
+.main-card a:not(.button) {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.main-card h4 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 1.5rem 0;
+}
+
+.main-card a.button {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #D0A144;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border: 1px solid #D0A144;
+    border-radius: 0.5rem;
+}
+
+/* END #main-cards */
+
+/* START #info */
+section#info {
+    background-color: #FAFAFA;
+    min-height: 20vh;
+}
+
+section#info div.center {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info .center .left h3 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+#info .center .left p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+#info .center .right a {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #784F33;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+}
+
+/* END #info */
+
+/* START #footer-about */
+section#footer-about {
+    background: linear-gradient(to left, #295C7A, #0072B5);
+    min-height: 20vh;
+}
+
+section#footer-about div.center {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.center .pages {
+    display: flex;
+}
+
+.center .pages .page {
+    margin-right: 8rem;
+}
+
+.center .pages .page .difference a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.center .pages .page li:not(.difference) a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.center .pages .page ul li span {
+    color: #8EC2F2;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+/* END #footer-about */
+
+/* START FOOTER */
+footer {
+    background-color: #FAFAFA;
+    min-height: 10vh;
+}
+
+footer div.center {
+    min-height: 10vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center .text {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.center .social-icons a:nth-child(1) {
+    display: inline-block;
+    color: #335BF5;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+}
+
+.center .social-icons a:nth-child(2) {
+    display: inline-block;
+    color: #E51F5A;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+}
+
+.center .social-icons a:nth-child(3) {
+    display: inline-block;
+    color: #21A6DF;
+    font-size: 2.4rem;
+    margin-right: 2rem;
+}
+
+.center .social-icons a:nth-child(4) {
+    display: inline-block;
+    color: #E42F08;
+    font-size: 2.4rem;
+}
+
+/* END FOOTER */
+
+@media screen and (max-width: 768px) {
+
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    section#main-section {
+        background-image: none;
+        background-color: #f6f6f6;
+        min-height: 50vh;
+    }
+
+    header#navbar {
+        position: relative;
+    }
+
+    header#navbar .flex ul {
+        position: absolute;
+        top: 10rem;
+        right: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header#navbar .responsiv-icons {
+        display: flex;
+    }
+
+    header#navbar .responsiv-icons a {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    section#main-section header#navbar div.flex {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    section#main-section header#navbar .page-name h2 {
+        margin-right: 0;
+    }
+
+    header#navbar ul li a {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 6.5rem;
+    }
+    section#main-section article div.center{
+        width: 87%;
+    }
+    section#about div.center{
+        width: 80%;
+    }
+    article div.center div.about {
+        padding-right: 0;
+        margin-top: 34rem;
+    }
+    article div.center div.about h1 {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        margin: 2.5rem 0px;
+        text-align: center;
+    }
+
+    article div.center div.about p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    article div.about-button {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article div.about-button a:first-child {
+        width: 25rem;
+        margin: 2rem auto 1rem;
+    }
+    article div.about-button a:last-child{
+        display: inline-block;
+        margin: 0 auto;
+        width: 20rem;
+        padding: 1;
+    }
+    article .center .cards .cardd{
+        margin: 2rem 0;
+    }
+    .client-matters p{
+        padding: 0;
+        margin-top: 2rem;
+    }
+    section#client div.center .clients-number{
+        justify-content: center;
+    }
+    .clients-number .clients{
+        margin: 0 0 3rem 0;
+    }
+    .center .question p{
+        padding: 0;
+    }
+    .center .image-about{
+        flex-wrap: wrap;
+    }
+    .center .question p{
+        padding: 0;
+    }
+    .center .image-about .image{
+        margin: 0;
+    }
+    .center .image-about .about h3{
+        margin-top: 6rem;
+    }
+    .temporary .text h4{
+        padding: 0;
+    }
+    section#information {
+        background: linear-gradient(#FAFAFA,#FAFAFA);
+    }
+    .center .advertising{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .center .advertising div{
+        margin: 3rem 0;
+    }
+    .center .absolute-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: -15rem
+    }
+    .absolute-part .input-group.mb-0{
+        width: 26rem;
+        padding-bottom: 7rem;
+    }
+    .absolute-part .text{
+        width: 30rem;
+        padding: 0;
+    }
+    .absolute-part .text h2{
+        text-align: center;
+        padding: 2.5rem 0 1.5rem 2rem;
+    }
+    .touch h3{
+        margin-top: 15rem;
+    }
+    .touch p{
+        padding: 0;
+        margin-top: 5rem;
+    }
+    .center .main-cards-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .center .main-cards-flex .main-card{
+        margin: 0 0 3rem 0;
+    }
+    .center .main-cards-flex .main-card:nth-child(2){
+        transform: translateY(0);
+    }
+    section#info div.center{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #info .center .right a{
+        margin-top: 3rem;
+    }
+    .center .pages{
+        display: flex;
+        flex-direction: column;
+    }
+    section#footer-about{
+        margin-top: 6rem;
+    }
+    section#footer-about div.center{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .center .pages .page .difference:not(:first-child){
+        margin-top: 2rem;
+    }
+    footer div.center{
+        width: 70%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .center .text{
+        margin: 3rem 0;
+    }
+    .center .social-icons{
+        margin: 0 0 3rem 0;
+    }
+}
