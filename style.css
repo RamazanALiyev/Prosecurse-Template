@@ -39,6 +39,7 @@ section#main-section header#navbar div.flex {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 section#main-section header#navbar .page-name h2 {
@@ -533,6 +534,7 @@ section#main-cards div.center {
 
 .center .main-cards-flex {
     display: flex;
+    justify-content: space-between;
     margin-top: 8rem;
     padding-bottom: 10rem;
 }
@@ -545,20 +547,16 @@ section#main-cards div.center {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    transition: 300ms all;
 }
 
-.center .main-cards-flex .main-card:nth-child(2) {
-    height: 41.8rem;
-    transform: translateY(-4rem);
+.center .main-cards-flex .main-card:hover {
+    transform: scale(1.1,1.1);
     background-color: #252B42;
 }
 
-.center .main-cards-flex .main-card:nth-child(2) a:not(.button) {
-    color: #fff;
-}
-
-.center .main-cards-flex .main-card:nth-child(2) h4 {
-    color: #fff;
+.center .main-cards-flex .main-card:hover a:not(.button) {
+    color: #D0A144;
 }
 
 .main-card i {
